@@ -103,7 +103,7 @@
                                 <h4 style="color: white;">Select any 4 objects to set as Password... </h4>
                                 <img src="{% static 'alternate_auth/login_page_styles/images/img11/main11.jpeg' %}" alt="img1" style="width: 100%;height: 80%;">
                                 <h4 style="color: white;text-align: left"><b>PASSWORD: </b><button type="button" class="btn btn-info" style="width: 67px;height: 29px;padding: initial;margin-left: 150px;" onclick="reset_password()">RESET</button></h4>
-                                <div class="result" style="height: 80px;width: 100%;margin-top: 5px;display: flex;justify-content: left;border:2px solid #ffffff;" id="result">
+                                <div class="result" style="height: 95px;width: 100%;margin-top: 5px;justify-content: left;border:2px solid #ffffff;overflow: auto;white-space: nowrap;display: inline-block;" id="result">
 
                                 </div>
 
@@ -120,7 +120,7 @@
                                 <h4 style="color: white;">Select any 4 objects to set as Password... </h4>
                                 <img src="{% static 'alternate_auth/login_page_styles/images/img21/main1.jpg' %}" alt="img1" style="width: 100%;height: 80%;">
                                 <h4 style="color: white;text-align: left"><b>PASSWORD: </b><button type="button" class="btn btn-info" style="width: 67px;height: 29px;padding: initial;margin-left: 150px;" onclick="reset_password()">RESET</button></h4>
-                                <div class="result" style="height: 80px;width: 100%;margin-top: 5px;display: flex;justify-content: left;border:2px solid #ffffff;" id="result">
+                                <div class="result" style="height: 95px;width: 100%;margin-top: 5px;justify-content: left;border:2px solid #ffffff;overflow: auto;white-space: nowrap;display: inline-block;" id="result">
 
                                 </div>
 
@@ -137,7 +137,7 @@
                                 <h4 style="color: white;">Select any 4 objects to set as Password... </h4>
                                 <img src="{% static 'alternate_auth/login_page_styles/images/img31/life_style4.jpg' %}" alt="img1" style="width: 100%;height: 80%;">
                                 <h4 style="color: white;text-align: left"><b>PASSWORD: </b><button type="button" class="btn btn-info" style="width: 67px;height: 29px;padding: initial;margin-left: 150px;" onclick="reset_password()">RESET</button></h4>
-                                <div class="result" style="height: 80px;width: 100%;margin-top: 5px;display: flex;justify-content: left;border:2px solid #ffffff;" id="result">
+                                <div class="result" style="height: 95px;width: 100%;margin-top: 5px;display: flex;justify-content: left;border:2px solid #ffffff;" id="result">
 
                                 </div>
 
@@ -226,70 +226,70 @@
         function object_select(img){
             let result=document.getElementById('result');
             if (parseInt(img)-(parseInt(img)%10)==10){
-                if (image_count<4) {
+                if (image_count<10) {
                     if (img==11){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image11.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image11.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="11 "
                   }else if(img==12){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image12.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image12.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="12 "
                     }else if(img==13){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image13.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image13.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="13 "
                     }else if(img==14){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image14.jpeg' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image14.jpeg' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="14 "
                     }else if(img==15){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image15.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image15.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="15 "
                     }else{
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image16.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img11/image16.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="16 "
                     }
                 }
             }else if((parseInt(img)-(parseInt(img)%10)==20)){
 
-                if (image_count<4) {
+                if (image_count<10) {
                     if (img==21){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image21.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image21.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="21 "
                     }else if(img==22){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image22.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image22.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="22 "
                     }else if(img==23){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image23.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image23.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="23 "
                     }else if(img==24){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image24.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image24.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="24 "
                     }else if(img==25){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image25.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image25.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="25 "
                     }else{
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image26.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img21/image26.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="26 "
                     }
                 }
             }else if((parseInt(img)-(parseInt(img)%10)==30)){
 
-                if (image_count<4) {
+                if (image_count<10) {
                     if (img==31){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image1.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image1.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="31 "
                     }else if(img==32){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image2.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image2.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="32 "
                     }else if(img==33){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image3.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image3.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="33 "
                     }else if(img==34){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image4.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image4.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="34 "
                     }else if(img==35){
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image5.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image5.png' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="35 "
                     }else{
-                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image6.jpg' %}' alt='img' style='width: 90%;height: 90%;'></div>";
+                        result.innerHTML += "<div style='width: 20%;height: 70px;margin-left:5%;margin-top:5px;display:inline-block;'><img src='{% static 'alternate_auth/login_page_styles/images/img31/image6.jpg' %}' alt='img' style='width: 90%;height: 90%;'></div>";
                         password+="36 "
                     }
                 }
