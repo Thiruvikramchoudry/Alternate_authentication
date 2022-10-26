@@ -1,0 +1,22 @@
+{%  load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="{%  static 'alternate_auth/home_styles/css/index.css' %}">
+</head>
+<body style="background: url('{% static "alternate_auth/home_styles/images/background.jpg" %}');background-repeat: no-repeat;background-size: cover;position: relative;z-index: 1; ">
+    <nav>
+        <a href="{% url 'login'  %}"><button >login</button></a>
+        <a href="{% url 'signup_ref'  %}"><button >signup</button></a>
+    </nav>
+    <section class="mid" style="display: flex;justify-content: end;">
+        <div class="image">
+            <img src="{% static "alternate_auth/home_styles/images/bank_of_boroda.png" %}" alt="img" style="width: 100%;height: 100%;">
+        </div>
+
+    </section>
+
+</body>
+</html>
